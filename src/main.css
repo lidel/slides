@@ -11,10 +11,11 @@ section {
   min-height: 100vh;
   font-weight: lighter;
   font-size: 60px;
-  font-family: avenir next, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /*font-family: avenir next, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
   text-align: center;
   color: white;
-  background: #0b3a53;
+  /*background: #0b3a53;*/
+  background: #34373f;
   overflow:hidden;
 }
 
@@ -24,7 +25,6 @@ section code {
 
 section img {
   max-height: 100%;
-  padding-top: 100px;
 }
 
 section ul {

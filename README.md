@@ -1,6 +1,6 @@
-# IPFS GUI Review - 2018 Q2
+# IPFS In Web Browsers Lightning Talk - Berlin Developer Meeting 2018
 
-highlights of the IPFS GUI work in Q2 2018.
+> a 5 min lightning talk
 
 ## Getting started
 
