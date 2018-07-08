@@ -18,8 +18,6 @@
     <section>
       <h1>IPFS + Web Browsers</h1>
       <h2 class='ma0 pb5 fw2 aqua f-headline'>Berlin 2018</h2>
-      <p class='ma0 fw2 aqua'>ipfs/in-web-browsers <span class="charcoal-muted">@&nbsp;github</span></p>
-      <p class='ma0 fw2 aqua'>#ipfs-in-web-browsers  <span class="charcoal-muted">@&nbsp;freenode</span></p>
     </section>
 
     <section class="montserrat">
@@ -28,7 +26,6 @@
       <img class="mw5 v-mid" src="img/avatar2.2_512x512.png" />
       <span class="charcoal-muted">@</span> lidel</h2>
       <p class="white">
-      Captain<br/>
       <span class="charcoal-muted">(</span>IPFS<span class="charcoal-muted">)</span> In Web Browsers<br/>
       Working Group
       </p>
@@ -40,13 +37,20 @@
 
     <section>
       <h2 class="ma0 snowd fw6">Create <span class="aqua">browser integrations</span>,
-        <span class="aqua">work with browser vendors</span> and understand the existing challenges of <span class="aqua">IPFS</span> in the <span class="aqua">Browser Contexts</span>.</h2>
+        <span class="aqua">work with browser vendors</span> 
+        and understand the existing challenges of 
+        <span class="aqua">IPFS</span> in 
+        the <span class="aqua">Browser Context</span>.</h2>
     </section>
 
     <section>
-      <h1 class="montserrat">IPFS Companion</h1>
-      <h2 class='ma0 fw2 aqua f-headline'>browser extension</h2>
-      <img class="mt5 w-50 shadow-1 br3" src='img/ipfs-companion-v2.4.0.gif' alt='ipfs companion v2.4.0 enable/disable animation'/>
+      <h2>Companion<br/></h2>
+    </section>
+
+    <section>
+      <!--h1 class="montserrat">IPFS Companion</h1>
+      <h2 class='ma0 fw2 aqua f-headline'>browser extension</h2-->
+      <img class="mt5 w-60 shadow-1 br3" src='img/ipfs-companion-v2.4.2.gif' alt='ipfs companion v2.4.0 enable/disable animation'/>
     </section>
 
     <!--section>
@@ -60,15 +64,19 @@
     </section-->
 
     <section>
-      <h3 class="ma0">IPFS path uplift</h3>
-      <h4 class="mb5 fw3"><span class="gray">(</span>is the new CDN!<span class="gray">)</span></h4>
-      <code class="gray">↓ http://foo.bar<span class="aqua">/ipfs/Qm..MnR/cat.jpg</span></code><br/>
-      <code>→ [your gateway]<span class="aqua">/ipfs/Qm..MnR/cat.jpg</span></code>
+      <h3>Developers, developers, developers</h3>
+    </section>
 
-      <ul class="charcoal-muted">
+    <section>
+      <h3 class="ma0">IPFS path uplift</h3>
+      <h4 class="mb5 fw3 gray"><span class="gray">(</span>is the new CDN<span class="gray">)</span></h4>
+      <code class="gray fw6">↓ http://foo.bar<span class="aqua">/ipfs/Qm..MnR/cat.jpg</span></code><br/>
+      <code class="fw6">→ [your gateway]<span class="aqua">/ipfs/Qm..MnR/cat.jpg</span></code>
+
+      <ul class="gray-muted">
         <li>detect &amp; validate requests for IPFS paths</li>
         <ul>
-          <li>including cross-origin XHRs!</li>
+          <li>including cross-origin XHRs</li>
         </ul>
         <li>redirect &amp; serve from IPFS node</li>
         <li class="snow">start using <span class="aqua">content-addressing</span> today!</li>
@@ -76,14 +84,17 @@
     </section>
 
     <section>
-      <h3 class="ma0 fw3 white"><code>window.ipfs</code></h3>
-      <h4 class="mb5 fw3 charcoal-muted"><span class="gray">(</span>is a neighbour of <code>window.web3</code><span class="gray">)</span></h4>
+      <h2 class="ma0 fw6 white"><code>window.ipfs</code></h2>
       <ul>
         <li>safe subset of IPFS API</li>
         <li>conservative ACL controls</li>
         <li>MFS scoped per app</li>
         <li>a living <span class="aqua">prototype</span>, feedback is welcome!</span></li>
       </ul>
+    </section>
+
+    <section>
+      <img class="mt5 shadow-1 br3" src='img/windowipfsdocs.png'/>
     </section>
 
     <!--section>
@@ -97,11 +108,19 @@
     </section-->
 
     <section>
-      <h3>What's next for Companion?</h3>
+      <h3>What's next for IPFS in Web Browser?</h3>
+    </section>
+
+    <section>
+      <h3>Tackling Open Problems</h3>
       <ul>
-        <li>integrate new WebUI</li>
-        <li>embedded node with DHT and Circuit Relay</li>
-        <li>new APIs from browser vendors</li>
+        <li>Transition to <span class="aqua">Base32 CIDv1</span> (<code>ipfs://</code>)
+          <li>UX: ship new <span class="aqua">WebUI</span> with Companion</li>
+          <li><span class="aqua">Embedded js-ipfs</span> with DHT and Circuit Relay</li>
+          <li><span class="aqua">WebRTC</span> transport in Web Workers</li>
+          <li>IPFS Gateways in <span class="aqua">Service Workers</span> (P2P CDN!)</li>
+          <li><span class="aqua">New APIs</span>: native protocol handlers, DNS TXT Lookup,
+            mDNS, TCP/UDP Sockets, FS access</li>
       </ul>
     </section>
 
