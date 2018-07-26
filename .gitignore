@@ -4,6 +4,8 @@
 *.eml
 out/
 .DS_Store
+.cache
+dist
 .svn
 log/*.log
 tmp/**
@@ -11,3 +13,6 @@ node_modules/
 .sass-cache
 css/reveal.min.css
 js/reveal.min.js
+reveal-js-presentation.zip
+lib/ipfs-css/
+lib/tachyons/

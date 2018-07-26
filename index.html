@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>IPFS Companion</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/ipfs.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -21,11 +21,120 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
-	<body>
+	<body class="snow">
+    <header class="w-100 flex items-center pa3 fixed top-0">
+      <a href="#0" title="home" class="w-50">
+        <img src="img/ipfs-logo.svg" style="height: 50px" />
+      </a>
+      <h1 class="w-50 ma0 tr f3 fw2 montserrat aqua pr2">IPFS COMPANION</h1>
+    </header>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+              <section class="montserrat">
+                <h1 class="fw5">IPFS Companion</h1>
+                <h2 class='ma0 pb5 fw2 aqua f-headline'>browser extension</h2>
+              </section>
+
+              <section>
+                <h2 class="fw8">Bold mission..</h2>
+              </section>
+
+              <section>
+                <h1 class="fw1 snow">Add <span class="aqua fw6">IPFS</span> support<br/>to web <span class="aqua fw6">browsers</span></h1>
+              </section>
+
+              <section>
+                <!--h1 class="montserrat">IPFS Companion</h1>
+                <h2 class='ma0 fw2 aqua f-headline'>browser extension</h2-->
+                <img class="mt5 stretch shadow-1" src='img/ipfs-companion-v2.4.2.gif' alt='ipfs companion v2.4.0 enable/disable animation'/>
+              </section>
+
+              <section>
+                <h3>Key features</h3>
+                <ul>
+                  <li>uplifts IPFS paths on the web</li>
+                  <li>quick file sharing</li>
+                  <li>opt-in experiments: embedded js-ipfs, dnslink</li>
+                  <li>IPFS API under <code>window.ipfs</code></li>
+                </ul>
+              </section>
+
+              <section>
+                <h2>IPFS addressing</h2>
+                <h3 class="aqua fw1">& protocol uplift</h3>
+              </section>
+
+              <section>
+                <p>
+                <code class="gray fw6">↓ http://foo.tld<span class="aqua">/ipfs/Qm..MnR/cat.jpg</span></code><br/>
+                <code class="fw6">→ [local gateway]<span class="aqua">/ipfs/Qm..MnR/cat.jpg</span></code>
+                </p>
+
+                <ul class="gray-muted">
+                  <li>detect &amp; validate requests for IPFS paths</li>
+                  <ul>
+                    <li>including cross-origin XHRs</li>
+                  </ul>
+                  <li>redirect &amp; serve from IPFS node</li>
+                  <li class="snow">start using <span class="aqua">content-addressing</span> today!</li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 class="ma0 fw6 white"><code>window.ipfs</code></h2>
+                <ul>
+                  <li>safe subset of IPFS API</li>
+                  <li>conservative ACL controls</li>
+                  <li>MFS scoped per app</li>
+                  <li>a living <span class="aqua">prototype</span>, feedback is welcome!</span></li>
+                </ul>
+              </section>
+
+              <section>
+                <img class="mt5 shadow-2 br1" src='img/windowipfsdocs.png'/>
+              </section>
+
+              <!--section>
+                <h3>Current limitations</h3>
+                <ul>
+                  <li>requires external IPFS node</li>
+                  <li>upload filesize limits due to browser bugs</li>
+                  <li>differences between browser vendors</li>
+                  <li>missing / unstable APIs</li>
+                </ul>
+              </section-->
+
+              <section>
+                <h3>What's next for IPFS in Web Browser?</h3>
+              </section>
+
+              <section>
+                <h3>Tackling Open Problems</h3>
+                <ul>
+                  <li>Transition to <span class="aqua">Base32 CIDv1</span> <span class="gray">(<code>ipfs://<cid></code>)</span>
+                    <li>UX: ship new <span class="aqua">WebUI</span> with Companion</li>
+                    <li>File upload: browser bugs and performance</li>
+                    <li><span class="aqua">Embedded js-ipfs</span> with DHT and Circuit Relay</li>
+                    <li><span class="aqua">WebRTC</span> transport in Web Workers</li>
+                    <li>IPFS Gateways in <span class="aqua">Service Workers</span> (P2P CDN!)</li>
+                    <li><span class="aqua">New APIs</span>: native protocol handlers, DNS TXT Lookup,
+                      mDNS, TCP/UDP Sockets, FS access</li>
+                </ul>
+              </section>
+
+              <section>
+                <h1>Join Us!</h1>
+                <p class='fw2 aqua'>ipfs/in-web-browsers <span class="charcoal-muted">@&nbsp;github</span><br/>
+                #ipfs-in-web-browsers  <span class="charcoal-muted">@&nbsp;freenode</span></p>
+                <p class='ma0 fw2 aqua'>ipfs/ipfs-gui <span class="charcoal-muted">@&nbsp;github</span></p>
+              </section>
+              
+              <section>
+                <h1>Thank You!</h1>
+                <p class='fw2 aqua'>ipfs/in-web-browsers <span class="charcoal-muted">@&nbsp;github</span><br/>
+                #ipfs-in-web-browsers  <span class="charcoal-muted">@&nbsp;freenode</span></p>
+                <p class='ma0 fw2 aqua'>ipfs/ipfs-gui <span class="charcoal-muted">@&nbsp;github</span></p>
+              </section>
 			</div>
 		</div>
 
@@ -37,9 +146,18 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+                // Display presentation control arrows
+                controls: false,
+                // Enable slide navigation via mouse wheel
+                mouseWheel: true,
+                // Transition style
+                transition: 'fade', // none/fade/slide/convex/concave/zoom
+                // Transition speed
+                transitionSpeed: 'fast', // default/fast/slow
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]

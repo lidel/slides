@@ -1,23 +1,17 @@
 {
-  "name": "reveal.js",
+  "name": "slide-deck-dweb",
   "version": "3.6.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://revealjs.com",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
+  "private": true,
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
-    "build": "grunt"
-  },
-  "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "build": "npx run-s build:*",
+    "build:cp": "shx cp -r node_modules/tachyons/ node_modules/ipfs-css/ lib/",
+    "build:package": "grunt package && shx rm -rf ./dist && unzip -q reveal-js-presentation.zip -d dist",
+    "ipfs": "ipfs add --cid-version 1 -r -p dist",
+    "publish": "run-s build ipfs"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -33,11 +27,17 @@
     "grunt-contrib-qunit": "~1.2.0",
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^2.0.0",
     "grunt-retire": "^1.0.7",
+    "grunt-sass": "^2.0.0",
     "grunt-zip": "~0.17.1",
     "mustache": "^2.3.0",
+    "npm-run-all": "4.1.3",
+    "shx": "0.3.2",
     "socket.io": "^1.7.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ipfs-css": "0.6.0",
+    "tachyons": "4.11.1"
+  }
 }

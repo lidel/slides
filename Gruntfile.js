@@ -109,6 +109,7 @@ module.exports = function(grunt) {
 					'css/**',
 					'js/**',
 					'lib/**',
+					'img/**',
 					'images/**',
 					'plugin/**',
 					'**.md'
@@ -169,7 +170,7 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'default', [ 'css', 'js' ] );
 
 	// JS task
-	grunt.registerTask( 'js', [ 'jshint', 'uglify', 'qunit' ] );
+	grunt.registerTask( 'js', [ 'uglify' ] );
 
 	// Theme CSS
 	grunt.registerTask( 'css-themes', [ 'sass:themes' ] );
