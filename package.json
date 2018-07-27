@@ -10,8 +10,8 @@
     "build": "npx run-s build:*",
     "build:cp": "shx cp -r node_modules/tachyons/ node_modules/ipfs-css/ lib/",
     "build:package": "grunt package && shx rm -rf ./dist && unzip -q reveal-js-presentation.zip -d dist",
-    "ipfs": "ipfs add --cid-version 1 -r -p dist",
-    "publish": "run-s build ipfs"
+    "ipfs": "ipfs add --cid-version 1 -r -Q dist",
+    "deploy": "run-s build ipfs"
   },
   "engines": {
     "node": ">=4.0.0"
