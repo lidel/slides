@@ -49,8 +49,15 @@
               </section>
 
               <section>
+                <!--h1 class="montserrat">IPFS Companion</h1>
+                <h2 class='ma0 fw2 aqua f-headline'>browser extension</h2-->
+                <img class="mt5 stretch shadow-mac" src='img/ipfs-companion-v2.4.2.gif' alt='ipfs companion v2.4.0 enable/disable animation'/>
+              </section>
+
+              <section>
                 <!-- TODO: merge this with previous one -->
-                <h3>Key features</h3>
+                <img class="stretch shadow-mac" src='img/ipfs-companion-v2.4.2.gif' alt='ipfs companion v2.4.0 enable/disable animation'/>
+                <div class="tracking-tight">
                 <ul>
                   <li>IPFS node <span class="aqua">status</span> + management</li>
                   <li>Easy file <span class="aqua">sharing</span></li>
@@ -58,13 +65,9 @@
                   <li>IPFS API under <code class="aqua">window.ipfs</code></li>
                   <li>Opt-in <span class="aqua">experiments</span>: embedded <span class="aqua">js-ipfs</span>, dnslink</li>
                 </ul>
+                </div>
               </section>
 
-              <section>
-                <!--h1 class="montserrat">IPFS Companion</h1>
-                <h2 class='ma0 fw2 aqua f-headline'>browser extension</h2-->
-                <img class="mt5 stretch shadow-mac" src='img/ipfs-companion-v2.4.2.gif' alt='ipfs companion v2.4.0 enable/disable animation'/>
-              </section>
 
               <section>
                 <img class="stretch shadow-mac" src="img/ipfs-companion-v2.3.0-upload.png" />
@@ -80,7 +83,8 @@
                   <span class="fragment">  
                     <div class="dib tl">
                     <code class="gray">ipfs://<span class="aqua">bafy…2va/cat.jpg</span></code><br/>
-                    <code class="gray">ipns://<span class="aqua">docs.ipfs.io</span></code>
+                    <code class="gray">ipns://<span class="aqua">docs.ipfs.io</span></code><br/>
+                    <code class="gray o-50">dweb:<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code>
                     </div>
                     <span class="tc"><br/>↓</span><br/>
                   </span>
@@ -125,7 +129,8 @@
                -->
 
               <section>
-                <h2 class="ma0 fw6 white"><code>window.ipfs</code></h2>
+                <h2 class="ma0 fw6 white"><code><span class="gray">window.</span>ipfs</code></h2>
+                <video class="stretch shadow-mac" data-autoplay src="img/window.ipfs.demo.mp4" muted></video>
               <!-- labday?
                 <ul class="gray">
                   <li>safe subset of IPFS API</li>
@@ -134,7 +139,6 @@
                   <li>a living <span class="aqua">prototype</span>, feedback is welcome!</span></li>
                 </ul>
               -->
-                <p class="aqua">{GIF of window.ipfs.files add+cat in browser console}</p>
               </section>
 
               <!-- labday?
@@ -146,8 +150,8 @@
 
               <section>
                 <h2>dnslink</h2>
-                <p class="aqua">{screenshot of dig output with DNS TXT record for docs.ipfs.io}</p>
-                <p class="aqua">{GIF of address bar changing docs.ipfs.io to /ipns/docs.ipfs.io/}</p>
+                <img class="stretch shadow-mac" src="img/dnslink-txt.png" />
+                <video class="stretch shadow-mac" data-autoplay src="img/dnslink.webm" muted loop></video>
               </section>
 
 
@@ -174,11 +178,15 @@
               </section>
 
               <section>
-                <p class="aqua">{screenshot of firefox store}</p>
+                <img class="stretch shadow-mac" src="img/companion-at-amo.png" />
               </section>
 
               <section>
-                <p class="aqua">{screenshot of chrome store}</p>
+                <img class="stretch shadow-mac" src="img/companion-at-chrome-store.png" />
+              </section>
+
+              <section>
+                <h3>the journey <br/>has just begun</h3>
               </section>
 
               <section>
@@ -205,13 +213,23 @@
 
               <section>
                 <h2>working with vendors</h2>
-                <p class="aqua">{ screenshot of arewedistributedyet.com }</p>
+                <img class="stretch shadow-mac" src="img/arewedistributedyet.png" />
+              </section>
+
+              <section>
+                <h3>brave</h3>
+                <img class="stretch shadow-mac" src="img/brave1.gif" />
               </section>
 
 
+
               <section>
-                <h2>mozilla / libdweb</h2>
-                <p class="aqua">{ screenshot of api table at GH repo}</p>
+                <h3><span class="gray">mozilla /</span> libdweb</h3>
+                <img class="stretch shadow-mac" src="img/libdweb1.png" />
+              </section>
+              <section>
+                <h3><span class="gray">mozilla /</span> libdweb</h3>
+                <img class="stretch shadow-mac" src="img/libdweb2.png" />
               </section>
 
               <section>
@@ -220,8 +238,9 @@
               </section>
 
               <section>
-                <h2>native protocol handler in Firefox</h2>
-                <h3 class="aqua">{ screenshot of ipfs://}</h3>
+                <h3>native protocol handler</h3>
+                <h4 class="aqua">companion+Firefox+libdweb</h4>
+                <img class="stretch shadow-mac" src="img/native-ipfs1.png" />
               </section>
 
               <section>
@@ -229,9 +248,9 @@
 
                 <div class="dib tl">
                 <p class='ma0 fw2'>Install &amp; find out more:</p>
-                <p class='fw2 aqua'>ipfs/ipfs-companion <span class="charcoal-muted">@&nbsp;github</span><br/>
-                <p class='fw2 aqua'>ipfs/in-web-browsers <span class="charcoal-muted">@&nbsp;github</span><br/>
-                #ipfs-in-web-browsers  <span class="charcoal-muted">@&nbsp;freenode</span></p>
+                <p class='fw2 aqua'>ipfs/ipfs-companion <span class="gray">@&nbsp;github</span><br/>
+                <p class='fw2 aqua'>ipfs/in-web-browsers <span class="gray">@&nbsp;github</span><br/>
+                #ipfs-in-web-browsers  <span class="gray">@&nbsp;freenode</span></p>
                 </div>
               </section>
  
