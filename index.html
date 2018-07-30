@@ -26,7 +26,11 @@
       <a href="#0" title="home" class="w-50">
         <img src="img/ipfs-logo.svg" style="height: 50px" />
       </a>
-      <h1 class="w-50 ma0 tr f3 fw2 montserrat aqua pr2">IPFS COMPANION</h1>
+      <h1 class="w-50 ma0 tr f6 fw2 montserrat aqua pr2 tracking">
+      IPFS&nbsp;COMPANION
+      <br/>
+      <span class="gray">DWEB&nbsp;SUMMIT&nbsp;2018</span>
+      </h1>
     </header>
 		<div class="reveal">
 			<div class="slides">
@@ -40,12 +44,18 @@
               </section>
 
               <section>
-                <h1 class="fw1 snow">Add <span class="aqua fw6">IPFS</span> support<br/>to web <span class="aqua fw6">browser<span class="fragment" data-fragment-index="1">s</span></span></h1>
-                <p>
-                <img class="stretch fragment" src="img/browsers/brave_256x256.png"  data-fragment-index="1"/>
-                <img class="stretch" src="img/browsers/firefox_256x256.png" />
-                <img class="stretch fragment" src="img/browsers/chrome_256x256.png" data-fragment-index="1"/>
-                </p>
+                <div class="">
+                  <h1 class="fw1 snow">Add <span class="aqua fw6">IPFS</span> support<br/>to web <span class="aqua fw6">browser<span class="fragment" data-fragment-index="1">s</span></span></h1`>
+                </div>
+                <div class="stretch">
+                  <img class="fragment" src="img/browsers/brave_256x256.png"  data-fragment-index="1"/>
+                  <img class="" src="img/browsers/firefox_256x256.png" />
+                  <img class="fragment" src="img/browsers/chrome_256x256.png" data-fragment-index="1"/>
+                </div>
+              </section>
+
+              <section>
+                <h2>feature highlights</h2>
               </section>
 
               <section>
@@ -54,8 +64,7 @@
                 <img class="mt5 stretch shadow-mac" src='img/ipfs-companion-v2.4.2.gif' alt='ipfs companion v2.4.0 enable/disable animation'/>
               </section>
 
-              <section>
-                <!-- TODO: merge this with previous one -->
+              <!-- section>
                 <img class="stretch shadow-mac" src='img/ipfs-companion-v2.4.2.gif' alt='ipfs companion v2.4.0 enable/disable animation'/>
                 <div class="tracking-tight">
                 <ul>
@@ -66,7 +75,7 @@
                   <li>Opt-in <span class="aqua">experiments</span>: embedded <span class="aqua">js-ipfs</span>, dnslink</li>
                 </ul>
                 </div>
-              </section>
+              </section -->
 
 
               <section>
@@ -74,36 +83,62 @@
               </section>
 
               <section>
-                <h2>IPFS addressing</h2>
-                <h3 class="aqua fw1">& protocol uplift</h3>
+                <img class="stretch shadow-mac" src="img/ipfs-companion-context-upload.png" />
               </section>
 
-              <section class="">
-                <div>
-                  <span class="fragment">  
-                    <div class="dib tl">
-                    <code class="gray">ipfs://<span class="aqua">bafy…2va/cat.jpg</span></code><br/>
-                    <code class="gray">ipns://<span class="aqua">docs.ipfs.io</span></code><br/>
-                    <code class="gray o-50">dweb:<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code>
-                    </div>
-                    <span class="tc"><br/>↓</span><br/>
-                  </span>
-                    <div class="dib tl">
-                      <code class="gray">http://foo.tld<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code><br/>
-                      <code class="gray">http://foo.tld<span class="aqua">/ipns/docs.ipfs.io</span></code><br/>
-                    </div>
-                    <span class="tc"><br/>↓</span><br/>
-                    <div class="dib tl">
-                      <code class="yellow">[local node]<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code><br/>
-                      <code class="yellow">[local node]<span class="aqua">/ipns/docs.ipfs.io</span></code>
-                    </div>
+              <section>
+                <h2>the key feature</h2>
+              </section>
+
+              <section>
+                <h3>add support for <br/><span class="aqua">content-addressing</span><br/>today!</h3>
+              </section>
+
+              <section
+                data-background-position="top 100px left 100px"
+                data-background-image="img/redirect-animation1.svg">
+              </section>
+
+              <section
+                data-background-position="top 100px left 100px"
+                data-background-image="img/redirect-animation2.svg">
+              </section>
+
+              <section>
+                <h4 class="lh-title">detect & redirect IPFS paths</h4>
+                <span class="tc">&nbsp;</span><br/>
+                <div class="dib tl">
+                  <code class="gray">http://foo.tld<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code><br/>
+                  <code class="gray">http://foo.tld<span class="aqua">/ipns/docs.ipfs.io</span></code><br/>
                 </div>
+                <span class="tc"><br/>↓</span><br/>
+                <div class="dib tl">
+                  <code class="yellow">[local node]<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code><br/>
+                  <code class="yellow">[local node]<span class="aqua">/ipns/docs.ipfs.io</span></code>
+                </div>
+              </section>
+              <section>
+                <h4 class="lh-title">support IPFS URIs</h4>
+                <span class="tc">&nbsp;</span><br/>
+                <div class="dib tl">
+                  <code class="gray">ipfs://<span class="aqua">bafy…2va/cat.jpg</span></code><br/>
+                  <code class="gray">ipns://<span class="aqua">docs.ipfs.io</span></code><br/>
+                  <code class="gray o-50">dweb:<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code>
+                </div>
+                <span class="tc"><br/>↓</span><br/>
+                <div class="dib tl">
+                  <code class="yellow">[local node]<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code><br/>
+                  <code class="yellow">[local node]<span class="aqua">/ipns/docs.ipfs.io</span></code>
+                </div>
+              </section>
 
-                <h4 class="stretch tracking fragment">
+                <!--h4 class="stretch tracking fragment">
                 &nbsp;<br/>
-                start using<br/><span class="aqua">content-addressing</span><br/>today</h4>
+                start using<br/><span class="aqua">content-addressing</span><br/>today</h4-->
 
-                <!-- subdomains - Lab day? 
+                <!-- redrect pic- Lab day?
+                <img class="stretch shadow-mac" src="img/locationbar-redirect.gif" />
+                subdomains - Lab day?
                 <div class="fragment mv7">
                   <h3>&nbsp</h3>
                   <code class="gray">http://<span class="aqua">bafy…2va.ipfs.foo.tld<span class="aqua">/cat.jpg</span></span></code><br/>
@@ -120,13 +155,18 @@
                   <li class="snow">start using <span class="aqua">content-addressing</span> today!</li>
                 </ul>
                 -->
+
+
+              <section>
+                <h2>dnslink</h2>
+                <img class="stretch shadow-mac" src="img/dnslink-txt.png" />
+                <video class="stretch shadow-mac" data-autoplay src="img/dnslink.webm" muted loop></video>
               </section>
 
-               <!-- Lab day? 
               <section>
-                <h3>start using<br/><span class="aqua">content-addressing</span><br/>today!</h3>
+                <h2>developing dapps?</h2>
               </section>
-               -->
+
 
               <section>
                 <h2 class="ma0 fw6 white"><code><span class="gray">window.</span>ipfs</code></h2>
@@ -147,12 +187,6 @@
               </section>
               -->
 
-
-              <section>
-                <h2>dnslink</h2>
-                <img class="stretch shadow-mac" src="img/dnslink-txt.png" />
-                <video class="stretch shadow-mac" data-autoplay src="img/dnslink.webm" muted loop></video>
-              </section>
 
 
               <section>
@@ -198,7 +232,7 @@
                 <h3>Tackling Open Problems</h3>
                 <ul>
                   <li>Transition to <span class="aqua">Base32 CIDv1</span> <span class="gray">(<code>ipfs://<cid></code>)</span>
-                    <!-- lab day? 
+                    <!-- lab day?
                     <li>UX: ship new <span class="aqua">WebUI</span> with Companion</li>
                     <li>IPFS Gateways in <span class="aqua">Service Workers</span> (P2P CDN!)</li>
                     -->
@@ -225,7 +259,7 @@
 
               <section>
                 <h3><span class="gray">mozilla /</span> libdweb</h3>
-                <img class="stretch shadow-mac" src="img/libdweb1.png" />
+                <img class="stretch shadow-mac" src="img/libdweb3.png" />
               </section>
               <section>
                 <h3><span class="gray">mozilla /</span> libdweb</h3>
@@ -234,7 +268,7 @@
 
               <section>
                 <h2>exciting future for webextensions!</h2>
-                <p class="aqua fragment">…is near</p>
+                <h4 class="aqua fragment">…is near</h4>
               </section>
 
               <section>
@@ -253,7 +287,7 @@
                 #ipfs-in-web-browsers  <span class="gray">@&nbsp;freenode</span></p>
                 </div>
               </section>
- 
+
 			</div>
 		</div>
 
