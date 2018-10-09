@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>IPFS Companion</title>
+		<title>2018Q4 IPFS in WEB BROWSERS</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/ipfs.css">
@@ -27,187 +27,53 @@
         <img src="img/ipfs-logo.svg" style="height: 50px" />
       </a>
       <h1 class="w-50 ma0 tr f6 fw2 montserrat aqua pr2 tracking">
-      IPFS&nbsp;COMPANION
+      WEB&nbsp;BROWSERS&nbsp;WG
       <br/>
-      <span class="gray">DWEB&nbsp;SUMMIT&nbsp;2018</span>
+      <span class="gray">IPFS&nbsp;LAB&nbsp;WEEK&nbsp;2018</span>
       </h1>
     </header>
 		<div class="reveal">
 			<div class="slides">
               <section class="montserrat">
-                <h1 class="tracking">IPFS Companion</h1>
-                <h2 class='ma0 pb5 aqua tracking'>browser extension</h2>
+                <h2 class="tracking">IPFS + Web Browsers</h2>
+                <h2 class='ma0 pb5 aqua tracking'>2018 Q4</h2>
+                <p>
+                <img src="img/team/hacdias.jpg" class="br-100 avatar"/>
+                <img src="img/team/olizilla.png" class="br-100 avatar"/>
+                <img src="img/team/fsdiogo.jpg" class="br-100 avatar"/>
+                <img src="img/team/alanshaw.jpg" class="br-100 avatar" />
+                <br/>
+                <img src="img/team/hugo.jpg" class="br-100 avatar"/>
+                <img src="img/team/lidel.png" class="br-100 avatar"/>
+                <img src="img/team/vasco.jpg" class="br-100 avatar"/>
+                </p>
               </section>
 
               <section>
-                <h2 class="fw8">Bold mission…</h2>
+                <h2 class="fw8">Highlights</h2>
+                  <p class="aqua">↓</p>
+                  <p>Browser Users</p>
+                  <p>Web Developers</p>
+                  <p>Browser Vendors</p>
               </section>
 
               <section>
-                <div class="">
-                  <h1 class="fw1 snow">Add <span class="aqua fw6">IPFS</span> support<br/>to web <span class="aqua fw6">browser<span class="fragment" data-fragment-index="1">s</span></span></h1`>
-                </div>
-                <div class="stretch">
-                  <img class="fragment" src="img/browsers/brave_256x256.png"  data-fragment-index="1"/>
-                  <img class="" src="img/browsers/firefox_256x256.png" />
-                  <img class="fragment" src="img/browsers/chrome_256x256.png" data-fragment-index="1"/>
-                </div>
+                <h2>Browser Users</h2>
+                <h2 class="aqua">→</h2>
               </section>
 
-              <section>
-                <h2>feature highlights</h2>
-              </section>
 
               <section>
-                <!--h1 class="montserrat">IPFS Companion</h1>
-                <h2 class='ma0 fw2 aqua f-headline'>browser extension</h2-->
+                <h4 class="montserrat">IPFS Companion</h4>
                 <img class="mt5 stretch shadow-mac" src='img/ipfs-companion-v2.4.2.gif' alt='ipfs companion v2.4.0 enable/disable animation'/>
               </section>
 
-              <!-- section>
-                <img class="stretch shadow-mac" src='img/ipfs-companion-v2.4.2.gif' alt='ipfs companion v2.4.0 enable/disable animation'/>
-                <div class="tracking-tight">
-                <ul>
-                  <li>IPFS node <span class="aqua">status</span> + management</li>
-                  <li>Easy file <span class="aqua">sharing</span></li>
-                  <li>Uplift <span class="aqua">IPFS paths on the web</li>
-                  <li>IPFS API under <code class="aqua">window.ipfs</code></li>
-                  <li>Opt-in <span class="aqua">experiments</span>: embedded <span class="aqua">js-ipfs</span>, dnslink</li>
-                </ul>
-                </div>
-              </section -->
-
-
               <section>
-                <img class="stretch shadow-mac" src="img/ipfs-companion-v2.3.0-upload.png" />
+                <h4><span class="aqua">2018 Q3:</span><br>6 releases (<span class="gray">14 betas</span>) </h4>
+                <img class="stretch shadow-mac" src="img/companion-repo.png" />
               </section>
 
               <section>
-                <img class="stretch shadow-mac" src="img/ipfs-companion-context-upload.png" />
-              </section>
-
-              <section>
-                <h2>the key feature</h2>
-              </section>
-
-              <section>
-                <h3>add support for <br/><span class="aqua">content-addressing</span><br/>today!</h3>
-              </section>
-
-              <section
-                data-background-position="top 100px left 100px"
-                data-background-image="img/redirect-animation1.svg">
-              </section>
-
-              <section
-                data-background-position="top 100px left 100px"
-                data-background-image="img/redirect-animation2.svg">
-              </section>
-
-              <section>
-                <h4 class="lh-title">detect & redirect IPFS paths</h4>
-                <span class="tc">&nbsp;</span><br/>
-                <div class="dib tl">
-                  <code class="gray">http://foo.tld<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code><br/>
-                  <code class="gray">http://foo.tld<span class="aqua">/ipns/docs.ipfs.io</span></code><br/>
-                </div>
-                <span class="tc"><br/>↓</span><br/>
-                <div class="dib tl">
-                  <code class="yellow">[local node]<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code><br/>
-                  <code class="yellow">[local node]<span class="aqua">/ipns/docs.ipfs.io</span></code>
-                </div>
-              </section>
-              <section>
-                <h4 class="lh-title">support IPFS URIs</h4>
-                <span class="tc">&nbsp;</span><br/>
-                <div class="dib tl">
-                  <code class="gray">ipfs://<span class="aqua">bafy…2va/cat.jpg</span></code><br/>
-                  <code class="gray">ipns://<span class="aqua">docs.ipfs.io</span></code><br/>
-                  <code class="gray o-50">dweb:<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code>
-                </div>
-                <span class="tc"><br/>↓</span><br/>
-                <div class="dib tl">
-                  <code class="yellow">[local node]<span class="aqua">/ipfs/bafy…2va/cat.jpg</span></code><br/>
-                  <code class="yellow">[local node]<span class="aqua">/ipns/docs.ipfs.io</span></code>
-                </div>
-              </section>
-
-                <!--h4 class="stretch tracking fragment">
-                &nbsp;<br/>
-                start using<br/><span class="aqua">content-addressing</span><br/>today</h4-->
-
-                <!-- redrect pic- Lab day?
-                <img class="stretch shadow-mac" src="img/locationbar-redirect.gif" />
-                subdomains - Lab day?
-                <div class="fragment mv7">
-                  <h3>&nbsp</h3>
-                  <code class="gray">http://<span class="aqua">bafy…2va.ipfs.foo.tld<span class="aqua">/cat.jpg</span></span></code><br/>
-                ↓<br/>
-                <code class="yellow">ipfs://<span class="aqua">bafy…2va/cat.jpg</span></code>
-                </div>
-
-                <ul class="dib pv3 gray-muted">
-                  <li>detect &amp; validate requests for IPFS paths</li>
-                  <ul>
-                    <li>including cross-origin XHRs</li>
-                  </ul>
-                  <li>redirect &amp; serve from IPFS node</li>
-                  <li class="snow">start using <span class="aqua">content-addressing</span> today!</li>
-                </ul>
-                -->
-
-
-              <section>
-                <h2>dnslink</h2>
-                <img class="stretch shadow-mac" src="img/dnslink-txt.png" />
-                <video class="stretch shadow-mac" data-autoplay src="img/dnslink.webm" muted loop></video>
-              </section>
-
-              <section>
-                <h2>developing dapps?</h2>
-              </section>
-
-
-              <section>
-                <h2 class="ma0 fw6 white"><code><span class="gray">window.</span>ipfs</code></h2>
-                <video class="stretch shadow-mac" data-autoplay src="img/window.ipfs.demo.mp4" muted></video>
-              <!-- labday?
-                <ul class="gray">
-                  <li>safe subset of IPFS API</li>
-                  <li>conservative ACL controls</li>
-                  <li>files root sandboxed per dapp</li>
-                  <li>a living <span class="aqua">prototype</span>, feedback is welcome!</span></li>
-                </ul>
-              -->
-              </section>
-
-              <!-- labday?
-              <section>
-                <img class="mt5 shadow-mac br1" src='img/windowipfsdocs.png'/>
-              </section>
-              -->
-
-
-
-              <section>
-                <h2><em class="aqua-muted">embedded</em> js-ipfs NODE</h2>
-                <img class="stretch" src="img/ipfs-companion-v2.4.2-js-ipfs.png" />
-              </section>
-
-
-
-              <!--section>
-                <h3>Current limitations</h3>
-                <ul>
-                  <li>requires external IPFS node</li>
-                  <li>upload filesize limits due to browser bugs</li>
-                  <li>differences between browser vendors</li>
-                  <li>missing / unstable APIs</li>
-                </ul>
-              </section-->
-
-              <section>
-                <h3>…and more!</h3>
                 <h4 class="aqua">install it today!</h4>
               </section>
 
@@ -219,72 +85,227 @@
                 <img class="stretch shadow-mac" src="img/companion-at-chrome-store.png" />
               </section>
 
+
               <section>
-                <h3>the journey <br/>has just begun</h3>
+                <img class="stretch shadow-mac" src="img/companion-stats-ff.png" />
               </section>
 
               <section>
-                <h3>identified shortcomings <br/>in browser context</h3>
-                <h4 class="aqua">(transports, bugs, missing apis)</h4>
+                <img class="stretch shadow-mac" src="img/companion-stats-chromium.png" />
               </section>
 
               <section>
-                <h3>Tackling Open Problems</h3>
-                <ul>
-                  <li>Transition to <span class="aqua">Base32 CIDv1</span> <span class="gray">(<code>ipfs://<cid></code>)</span>
-                    <!-- lab day?
-                    <li>UX: ship new <span class="aqua">WebUI</span> with Companion</li>
-                    <li>IPFS Gateways in <span class="aqua">Service Workers</span> (P2P CDN!)</li>
-                    -->
-                    <li><span class="aqua">Embedded js-ipfs</span> with DHT and Circuit Relay</li>
-                    <li>File upload: browser bugs and performance</li>
-                    <li><span class="aqua">WebRTC</span> transport in Web Workers</li>
-                    <li><span class="aqua">Missing APIs</span>: native protocol handlers, DNS TXT Lookup,
-                      mDNS, TCP/UDP Sockets, FS access</li>
-                </ul>
+                Recently shipped..
               </section>
 
 
               <section>
-                <h2>working with vendors</h2>
-                <img class="stretch shadow-mac" src="img/arewedistributedyet.png" />
+                <h4>User Onboarding</h4>
+               <img class="stretch" src="img/companion-welcome-off.png" />
               </section>
 
               <section>
-                <h3>brave</h3>
-                <img class="stretch shadow-mac" src="img/brave1.gif" />
+                <h4>User Onboarding</h4>
+               <img class="stretch" src="img/companion-welcome-on.png" />
               </section>
 
 
+              <section>
+                <h4>DNSLink detection</h4>
+                <h4 class="aqua">enabled by default!</h4>
+                <img class="stretch shadow-mac" src="img/dnslink-txt.png" />
+                <video class="stretch shadow-mac" data-autoplay src="img/dnslink.webm" muted loop></video>
+              </section>
+
+              <section>
+                <h4>DNSLink adoption</h4>
+               <img class="stretch shadow-mac" src="img/tr-wiki.png" />
+              </section>
+
+              <section>
+                <h4>DNSLink adoption</h4>
+               <img class="stretch shadow-mac" src="img/canada-catena.png" />
+              </section>
+
+              <section>
+                <h4>DNSLink adoption</h4>
+               <img class="stretch shadow-mac" src="img/cloudflare.png" />
+              </section>
+
+
+              <section>
+                End-user features, shipping in near future..
+              </section>
+
+              <section>
+                <img class="stretch" src="img/ipfs-backends.png" />
+              </section>
+
+              <section>
+                <h4>Improved Sharing</h4>
+                <img class="stretch" src="img/share-app.png" />
+              </section>
+
+              <section>
+                <h4>New Web UI</h4>
+                <img class="stretch" src="img/ipfs-webui-files.png" />
+              </section>
+
+              <section>
+                <h4></h4>
+                <img class="stretch shadow-mac" src="img/companion-install.png" />
+              </section>
+
+
+              <section>
+			  <h3>Web Developers<h3>
+              <h3 class="aqua">→</h3>
+              </section>
+
+              <section>
+                <h4>Upload performance<br/> and stability<br/>&nbsp;</h4>
+                <img class="stretch shadow-mac" src="img/ipfs-companion-v2.3.0-upload.png" />
+              </section>
+
+              <section>
+			  <p class="f1 f-headline lh-title">CIDv1 Base32</p>
+              <div class="f2 lh-title"><span class="gray">v0</span> <span class="aqua">→</span> v1<br/>
+              <code class="gray">Qmb...MnR</code> <span class="aqua">→</span> <code>baf...2zy</code>
+              </div>
+              </section>
+
+              <section>
+               <img class="stretch shadow-mac" src="img/cidv1b32.png" />
+              </section>
+
+              <section>
+			  <h3>window.ipfs</h3>
+                <img class="stretch shadow-mac" src="img/window1.png" />
+              </section>
+
+              <section>
+			  <h3>"window.ipfs" 2.0</h3>
+                <img class="stretch shadow-mac" src="img/window2.png" />
+              </section>
+
+              <section>
+                <h3>Working<br/>with</br>Browser Vendors</h3>
+              <h3 class="aqua">→</h3>
+              </section>
+
+              <section>
+			  <h3>arewedistributedyet.com</h3>
+               <img class="stretch shadow-mac" src="img/areweyet1.png" />
+              </section>
+
+              <section>
+			  <h5>github.com/arewedistributedyet</h5>
+               <img class="stretch shadow-mac" src="img/areweyet2.png" />
+              </section>
+
+              <section>
+              <h4>Safelist DWeb protocols in HTTP Spec</h4>
+              <p class="aqua">github.com/whatwg/html/issues/3935</p>
+              <img class="stretch shadow-mac" src="img/safelist.png" />
+              </section>
+
+              <section>
+              <h2>Chromium</h4>
+              <img class="stretch shadow-mac" src="img/safelist-chromium.png" />
+              </section>
+
+              <section>
+              <h2>Chromium</h4>
+              <img class="stretch shadow-mac" src="img/safelist-chromium2.png" />
+              </section>
+
+              <section>
+              <h2>Brave ← Chromium (WIP)</h4>
+              <img class="stretch shadow-mac" src="img/brave-chromium.png" />
+              </section>
+
+              <section>
+              <h2>Brave + go-ipfs (WIP)</h4>
+              <img class="stretch shadow-mac" src="img/brave-go-ipfs1.png" />
+              </section>
+
+              <section>
+              <h2>Mozilla</h4>
+              <img class="stretch shadow-mac" src="img/mozillahacks.png" />
+              </section>
 
               <section>
                 <h3><span class="gray">mozilla /</span> libdweb</h3>
                 <img class="stretch shadow-mac" src="img/libdweb3.png" />
               </section>
+
               <section>
                 <h3><span class="gray">mozilla /</span> libdweb</h3>
                 <img class="stretch shadow-mac" src="img/libdweb2.png" />
               </section>
 
               <section>
-                <h2>exciting future for webextensions!</h2>
-                <h4 class="aqua fragment">…is near</h4>
+                <h4><span class="gray">libdweb:</span> protocol handler demo</h4>
+                <img class="stretch shadow-mac" src="img/native-ipfs4.png" />
               </section>
 
               <section>
-                <h3>native protocol handler</h3>
-                <h4 class="aqua">companion+Firefox+libdweb</h4>
-                <img class="stretch shadow-mac" src="img/native-ipfs1.png" />
+                <h4><span class="gray">libdweb:</span> protocol handler demo</h4>
+                <img class="stretch shadow-mac" src="img/libdweb-demo-protocol.png" />
+              </section>
+
+              <section>
+                <h4 class="pb4"><span class="gray">libdweb:</span> protocol handler demo</h4>
+                <video class="stretch shadow-mac" data-autoplay src="img/native-ipfs2.webm" muted></video>
+              </section>
+
+              <section>
+                <h4><span class="gray">libdweb:</span> protocol handler demo</h4>
+                <video class="stretch shadow-mac" data-autoplay src="img/native-ipfs3.webm" muted></video>
+              </section>
+
+
+              <section>
+                <h4><span class="gray">libdweb:</span> local discovery<br/>and TCP transport demo</h4>
+                <img class="stretch shadow-mac" src="img/libdweb-demo-dt.png" />
+              </section>
+
+              <section>
+              <h3><span class="gray">mozilla /</span> libdweb</h3>
+              <p class="tl">IPFS demos:<br/>
+              <span class="gray">→</span> native protocol handler<br/>
+              <span class="gray">→</span> local discovery (mDNS/DNS-SD)<br/>
+              <span class="gray">→</span> TCP transport
+              </p>
+
+              <p class="tl">Next:<br/>
+              <span class="aqua">→</span> audits and API refinements<br/>
+              <span class="aqua">→</span> ship in Firefox Nightly!
+              </p>
+              </section>
+
+              <section>
+                <h1>#SOON<span class="gray">(-ish)</span></h1>
               </section>
 
               <section>
                 <h1>Thank you!</h1>
 
                 <div class="dib tl">
-                <p class='ma0 fw2'>Install &amp; find out more:</p>
+                <p class='ma0 fw2'>Install Companion!</p>
                 <p class='fw2 aqua'>ipfs/ipfs-companion <span class="gray">@&nbsp;github</span><br/>
+                <p class='ma0 fw2'>Find out more:</p>
                 <p class='fw2 aqua'>ipfs/in-web-browsers <span class="gray">@&nbsp;github</span><br/>
                 #ipfs-in-web-browsers  <span class="gray">@&nbsp;freenode</span></p>
+                <p class='ma0 fw2'>Hugs:<br/>
+                <img src="img/team/olizilla.png" class="br-100 avatar-s"/>
+                <img src="img/team/alanshaw.jpg" class="br-100 avatar-s" />
+                <img src="img/team/fsdiogo.jpg" class="br-100 avatar-s"/>
+                <img src="img/team/hugo.jpg" class="br-100 avatar-s"/>
+                <img src="img/team/hacdias.jpg" class="br-100 avatar-s"/>
+                <img src="img/team/vasco.jpg" class="br-100 avatar-s"/>
+                <img src="img/team/drbh.jpg" class="br-100 avatar-s"/>
+                </p>
                 </div>
               </section>
 
@@ -301,6 +322,10 @@
 			Reveal.initialize({
                 // Display presentation control arrows
                 controls: false,
+                /*
+                slideNumber: true,
+                slideNumber: 'c/t',
+                */
                 // Enable slide navigation via mouse wheel
                 mouseWheel: true,
                 // Transition style
